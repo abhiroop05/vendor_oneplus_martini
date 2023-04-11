@@ -190,6 +190,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OplusAppPlatform",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
@@ -381,24 +393,6 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_oplus_cameraextension",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_oplus_cammidasservice",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cammidasservice.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
