@@ -6,6 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/martini
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/martini/proprietary/system_ext/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/engineer_camera_config \
+    vendor/oneplus/martini/proprietary/system_ext/etc/camera/mtCalibrationCfg.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/mtCalibrationCfg.xml \
+    vendor/oneplus/martini/proprietary/system_ext/etc/camera/mtInputparam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/mtInputparam.xml \
+    vendor/oneplus/martini/proprietary/system_ext/etc/camera/mwCalibrationCfg.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/mwCalibrationCfg.xml \
+    vendor/oneplus/martini/proprietary/system_ext/etc/camera/mwInputparam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/mwInputparam.xml \
     vendor/oneplus/martini/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/martini/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
